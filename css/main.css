@@ -9,7 +9,7 @@ body {
 }
 
 .first {
-    background-image: url(/images/desktop/image-hero.jpg);
+    background-image: url('../images/desktop/image-hero.jpg');
     padding-top: 3rem;
     padding-inline: 10rem;
     height: 40rem;
