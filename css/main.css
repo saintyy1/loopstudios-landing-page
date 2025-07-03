@@ -272,7 +272,7 @@ footer {
 
 @media (max-width: 425px) {
     .first {
-        background-image: url(/images/mobile/image-hero.jpg);
+        background-image: url('../images/mobile/image-hero.jpg');
         background-size: cover;
         padding-inline: 2rem;
     }
