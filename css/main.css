@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+.first {
+    background-image: url(/images/desktop/image-hero.jpg);
+    padding-top: 3rem;
+    padding-inline: 10rem;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.first-text {
+    border: 1px solid white;
+    width: 50%;
+    margin-top: 8rem;
+    padding-block: 2rem;
+    padding-left: 2rem;
+}
+
+.first-text h1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 0.9;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.second {
+    display: flex;
+    width: 78%;
+    margin: auto;
+    padding-top: 8rem;
+    position: relative;
+}
+
+.first-child {
+    width: 55%;
+}
+
+.second-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    left: 30rem;
+    background-color: white;
+    padding-top: 3rem;
+    padding-left: 3rem;    
+}
+
+.second-text h3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.second-text p {
+    color: hsl(0, 0%, 55%);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    width: 120%;
+}
+
+.three {
+    padding-top: 8rem;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 8rem;
+}
+
+nav h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+nav button {
+    background-color: white;
+    padding-inline: 2.5rem;
+    padding-block: 0.7rem;
+}
+
+.second-button {
+    display: none;
+}
+
+.mobile-grid-container {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item h3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.9;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: black;
+    padding-block: 2rem;
+}
+
+.footies {
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-socials {
+    display: none;
+}
+
+@media (min-width: 1441px) {
+    .first {
+        max-width: 1820px;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .second {
+        max-width: 1500px;
+    }
+
+    .second-text p {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .three {
+        max-width: 1500px;
+    }
+    
+    footer {
+        padding-block: 5rem;
+    }
+
+    .footies {
+        max-width: 1820px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .second-text {
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 1265px) {
+    .first {
+        padding-inline: 5rem;
+    }
+
+    .second {
+        width: 86%;
+    }
+
+    .second-text {
+        left: 28rem;
+    }
+    .second-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .three {
+        width: 86%;
+    }
+
+    .footies {
+        width: 86%;
+    }
+}
+
+
+@media (max-width: 1071px) {
+    .first-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .second-text h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 961px) {
+    .first {
+        padding-inline: 2rem;
+    }
+
+    .first-text h1 {
+        font-size: 2.5rem;
+    }
+    .second {
+    width: 92%;
+    }
+
+    .three {
+        width: 92%;
+    }
+
+    .footies {
+        width: 92%;
+    }
+}
+
+@media (max-width: 425px) {
+    .first {
+        background-image: url(/images/mobile/image-hero.jpg);
+        background-size: cover;
+        padding-inline: 2rem;
+    }
+
+    .first nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .first-text {
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .first-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+    }
+
+    .first-child {
+        background-image: url(/images/mobile/image-interactive.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .second-text {
+        position: static;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .second-text h3 {
+        font-size: 2rem;
+    }
+
+    .second-text p {
+        text-align: center;
+    }
+
+    .three {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+    .three h2 {
+        font-size: 2rem;
+    }
+
+    .first-button {
+        display: none;
+    }
+
+    .grid-container {
+        display: none;
+    }
+
+    .mobile-grid-container {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mobile-grid-item {
+        position: relative;
+    }
+
+    .mobile-grid-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-grid-item h3 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: lighter;   
+    }
+
+    .second-button {
+        display: block;
+        background-color: white;
+        padding-inline: 2rem;
+        padding-block: 0.5rem;
+        align-self: center;
+    }
+
+    .footies {
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footies nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socials {
+        display: none;
+    }
+    
+    .mobile-socials {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .first-text h1 {
+        font-size: 2rem;
+    }
+}
+ 
